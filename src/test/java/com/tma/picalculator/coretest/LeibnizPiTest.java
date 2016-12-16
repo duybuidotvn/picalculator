@@ -1,19 +1,15 @@
 package com.tma.picalculator.coretest;
 
 import java.util.ArrayList;
-
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-
-import com.tma.picalculator.common.Constant;
-import com.tma.picalculator.formula.LeibnizPiCalculator;
 
 import junit.framework.TestCase;
 
 public class LeibnizPiTest extends TestCase {
 
-	private List<Long> listTestCase;
-	private LeibnizPiCalculator piCal = new LeibnizPiCalculator();
+	/*private List<Long> listTestCase;
+	private ProposalFrameworkCalculator piCal = new ProposalFrameworkCalculator();
 
 	public LeibnizPiTest() {
 		if (listTestCase == null) {
@@ -43,7 +39,7 @@ public class LeibnizPiTest extends TestCase {
 			System.out.println("Request Number is " + numberRequest);
 			if (validate == true) {
 				long start = System.currentTimeMillis();
-				String result = piCal.calculate(numberRequest);
+				String result = piCal.calculate(numberRequest, Formula.LEIBNIZ);
 				System.out.println("Result is: " + result);
 				long end = System.currentTimeMillis();
 				System.out.println("Run time seconds: " + (float) (end - start)
@@ -56,5 +52,5 @@ public class LeibnizPiTest extends TestCase {
 				assertEquals(true, validate);
 			}
 		}
-	}
+	}*/
 }

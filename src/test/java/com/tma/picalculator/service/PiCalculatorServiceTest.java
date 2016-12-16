@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.duyb.web.pi.service.PiCalculatorService;
 import com.tma.picalculator.BaseAwareDomain;
 
 public class PiCalculatorServiceTest extends BaseAwareDomain{

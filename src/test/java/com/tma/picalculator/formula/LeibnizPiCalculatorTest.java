@@ -8,11 +8,9 @@ import junit.framework.TestCase;
 
 import org.junit.Test;
 
-import com.tma.picalculator.common.Constant;
-
 public class LeibnizPiCalculatorTest extends TestCase {
 
-	private LeibnizPiCalculator piCal = new LeibnizPiCalculator();
+	/*private ProposalFrameworkCalculator piCal = new ProposalFrameworkCalculator();
 
 	@Test
 	public void testBasicTerms() throws InterruptedException, ExecutionException {
@@ -30,8 +28,8 @@ public class LeibnizPiCalculatorTest extends TestCase {
 
 		}
 		for (int i=0; i<Constant.NO_TESTCASES; i++){
-			System.out.println("Request No: " + listData.get(i) + ". Result: " + piCal.calculate(listData.get(i)));
+			System.out.println("Request No: " + listData.get(i) + ". Result: " + piCal.calculate(listData.get(i),Formula.LEIBNIZ));
 		}
-	}
+	}*/
 
 }
