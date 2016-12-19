@@ -8,9 +8,16 @@ public enum Formula {
 		}
 	},
 	
+	BBP(Long.MAX_VALUE) {
+		@Override
+		protected double valueAt(long index) {
+		return (1d/Math.pow(16,index))*((4d/((8*index)+1))-(2d/((8*index)+4))-(1d/((8*index)+5))-(1d/((8*index)+6)));
+		}
+	},
+	
 	NILAKANTHA(Long.MAX_VALUE) {
 		@Override
-		public double valueAt(long index) {
+		protected double valueAt(long index) {
 			if(index == 0) {
 				return 3d;
 			} else if (index % 2 == 0) {

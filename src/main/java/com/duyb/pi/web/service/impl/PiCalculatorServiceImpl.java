@@ -58,7 +58,7 @@ public class PiCalculatorServiceImpl implements PiCalculatorService {
 	 */
 	@Override
 	public int getError(String piResult) {
-		String Pi = String.valueOf(Math.PI);
+		String Pi = "3.14159265358979323846";
 		int cnt = 0;
 		for(int i = 0 ; i<piResult.length() && i<Pi.length(); i++){
 			if(piResult.charAt(i) != Pi.charAt(i))
@@ -75,7 +75,7 @@ public class PiCalculatorServiceImpl implements PiCalculatorService {
 		String piResult = getPi(piModel.getFramework(), piModel.getFormula(), piModel.getTerms());
 		long end =  System.currentTimeMillis();
 		String time = String.valueOf((end - start)+" ms");
-		String javaPi = String.valueOf(Math.PI);
+		String javaPi = "3.14159265358979323846";
 		int digit = getError(piResult);
 
 		piModel.setPi(piResult);
